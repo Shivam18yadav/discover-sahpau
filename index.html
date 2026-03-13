@@ -66,39 +66,39 @@
             // Food
             {
                 id: 1, category: 'food', name: 'Shiva Veg Biryani', icon: 'utensils',
-                description: 'Renowned locally for serving the most flavorful and aromatic Veg Pulav in town. A must-visit destination for those who appreciate perfectly spiced rice dishes.',
+                specialty: 'Famous for Veg Pulav',
                 address: 'Dharamshala Chauraha, Sahpau', mapLink: 'https://maps.app.goo.gl/zhdVRYviAc83r1Tp7',
                 timing: '8:00 AM - 12:00 PM'
             },
             {
                 id: 2, category: 'food', name: 'Ajay Bhelpuri Shop', icon: 'utensils',
-                description: 'The ultimate spot for authentic, tangy, and crunchy Bhelpuri. A beloved local favorite for a quick, delicious evening street-food snack.',
+                specialty: 'Famous for Bhelpuri',
                 address: 'Near Prachin Hanuman Mandir, Sahpau', mapLink: 'https://maps.app.goo.gl/WVPTgwAcF7E8jHHo9',
                 timing: '4:00 PM - 8:00 PM'
             },
             {
                 id: 3, category: 'food', name: 'Maa Vaishno Devi Misthan Bhandar', icon: 'utensils',
-                description: 'A traditional and beloved sweet shop famous for its piping hot, crispy samosas, perfectly spiced kachoris, and a wide, mouth-watering assortment of Indian sweets.',
+                specialty: 'Famous for Samosas, Kachoris & Sweets',
                 address: 'Main Bazar, Sahpau', mapLink: 'https://maps.app.goo.gl/4XVnb8RJjhGZ7rNN9',
                 timing: '8:00 AM - 8:00 PM'
             },
             {
                 id: 4, category: 'food', name: 'Pappu Fast Food', icon: 'utensils',
-                description: 'The go-to neighborhood spot for irresistible Pani Puris and lip-smacking Chaat. Guaranteed to satisfy your spicy and tangy street food cravings.',
+                specialty: 'Famous for Pani Puri & Chaat',
                 address: 'Dharamshala Chauraha, Sahpau', mapLink: 'https://maps.app.goo.gl/CH8zGC9X5xVnvpFi8',
                 timing: '2:00 PM - 7:00 PM'
             },
             // Places
             {
                 id: 5, category: 'place', name: 'BhadraKali Mata Temple', icon: 'landmark',
-                description: 'An ancient, highly revered spiritual sanctuary drawing over 5,000 devoted visitors every Monday. A beautifully serene and culturally essential landmark that you simply must visit.',
+                specialty: 'Ancient temple visited by 5000+ devotees on Mondays',
                 address: 'Sahpau', mapLink: 'https://maps.app.goo.gl/J46ePpaEeaEevdAr7',
                 timing: 'Open 24/7'
             },
             // Stays
             {
                 id: 6, category: 'stay', name: 'DS Farm House', icon: 'bed',
-                description: 'A premier accommodation offering a highly comfortable, secure, and peaceful stay. Widely recognized as the top choice for travelers looking to relax in the area.',
+                specialty: 'Best place to stay in Sahpau',
                 address: 'Near Tharora Puliya, Jalesar Road', mapLink: 'https://maps.app.goo.gl/CUtf5nNetbfMWfww6',
                 timing: 'Open 24/7'
             }
@@ -155,9 +155,12 @@
                             </div>
                         </div>
                         
-                        <p class="text-slate-600 mb-6 flex-grow leading-relaxed">
-                            ${location.description}
-                        </p>
+                        <div class="mb-6 flex-grow">
+                            <span class="text-emerald-600 font-bold text-xs uppercase tracking-wider mb-1 block">Specialty</span>
+                            <p class="text-slate-800 text-lg font-medium leading-snug">
+                                ${location.specialty}
+                            </p>
+                        </div>
                         
                         <div class="mt-auto pt-6 border-t border-slate-100">
                             <div class="flex items-start space-x-2 text-sm text-slate-500 mb-2">
